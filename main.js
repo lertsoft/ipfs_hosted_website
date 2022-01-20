@@ -1,3 +1,5 @@
+// Link for the swipe framework used: https://swiperjs.com/ 
+
 /*==================== MENU SHOW & HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
