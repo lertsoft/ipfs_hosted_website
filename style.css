@@ -352,6 +352,15 @@ img{
     align-items: center;
 }
 
+.button--port{
+    display: inline-flex;
+    border-radius: .5rem;
+    text-align: justify right;
+    justify-self: right;
+    align-self: justify right;
+
+}
+
 .button--small{
     padding: .75rem 1rem;
     margin-bottom: var(--mb-0-5);
