@@ -724,6 +724,12 @@ img{
     justify-self: center;
     align-self: center;
 }
+.gallery-image{
+    border-radius: .5rem;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
 
 .swiper-button-prev::after,
 .swiper-button-next::after{
@@ -979,6 +985,10 @@ img{
         width: 280px;
         height: 158px;
     }
+    .gallery-image{
+        width: 320px;
+        
+    }
 }
 /* For medium devices */
 @media screen and (min-width: 568px){
@@ -1157,6 +1167,10 @@ img{
     .youtube{
         width: 560px;
         height: 315px;
+    }
+    .gallery-image{
+        width: 700px;
+        
     }
 }
 

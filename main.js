@@ -63,12 +63,12 @@ tabs.forEach(tab =>{
         tabContents.forEach(tabContent => {
             tabContent.classList.remove('portfolio__active', 'qualification__active')
         })
-        target.classList.add('portfolio__active', 'qualification__active')
+        target.classList.add('qualification__active', 'portfolio__active' )
 
         tabs.forEach(tab => {
             tab.classList.remove('portfolio__active', 'qualification__active')
         })
-        tab.classList.add('portfolio__active', 'qualification__active')
+        tab.classList.add('qualification__active', 'portfolio__active' )
 
     })
 })
