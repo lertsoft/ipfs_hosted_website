@@ -354,6 +354,7 @@ img{
 
 .button--small{
     padding: .75rem 1rem;
+    margin-bottom: var(--mb-0-5);
 }
 
 .button--link{
@@ -560,6 +561,7 @@ img{
 .qualification__active[data-content]{
     display: block;
 }
+
 .qualification__button.qualification__active{
     color: var(--first-color);
 }
@@ -676,14 +678,16 @@ img{
 }
 
 .portfolio__img{
-    width: 265px;
-    border-radius: .5rem;
+    border-radius: 1rem;
     justify-self: center;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
 }
 
 .portfolio__title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
+    margin-top: var(--mb-0-5);
 }
 
 .portfolio__description{
@@ -692,6 +696,24 @@ img{
 
 .portfolio__button:hover .button__icon{
     transform: translateX(.25rem);
+}
+
+.portfolio [data-content]{
+    display: none;
+}
+.portfolio__active[data-content]{
+    display: block;
+}
+.portfolio__data{
+    display: grid;
+    grid-template-columns: 2fr max-content 2fr;
+    column-gap: 2rem;
+}
+.portfolio__video{
+    border-radius: .5rem;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
 }
 
 .swiper-button-prev::after,
@@ -725,8 +747,7 @@ img{
 .swiper-pagination-bullet{
     outline: none;
 }
-
-
+  
 /*==================== PROJECT IN MIND ====================*/
 .project{
     text-align: center;

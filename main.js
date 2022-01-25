@@ -52,7 +52,7 @@ skillsHeader.forEach((el) => {
 });
 
 
-/*==================== QUALIFICATION TABS ====================*/
+/*==================== PORTFOLIO TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
 
@@ -61,17 +61,40 @@ tabs.forEach(tab =>{
         const target = document.querySelector(tab.dataset.target)
 
         tabContents.forEach(tabContent => {
-            tabContent.classList.remove('qualification__active')
+            tabContent.classList.remove('portfolio__active', 'qualification__active')
         })
-        target.classList.add('qualification__active')
+        target.classList.add('portfolio__active', 'qualification__active')
 
         tabs.forEach(tab => {
-            tab.classList.remove('qualification__active')
+            tab.classList.remove('portfolio__active', 'qualification__active')
         })
-        tab.classList.add('qualification__active')
+        tab.classList.add('portfolio__active', 'qualification__active')
 
     })
 })
+
+/*==================== QUALIFICATION TABS ====================*/
+// const tabs = document.querySelectorAll('[data-target]'),
+//       tabContents = document.querySelectorAll('[data-content]')
+
+// tabs.forEach(tab =>{
+//     tab.addEventListener('click', () => {
+//         const target = document.querySelector(tab.dataset.target)
+
+//         tabContents.forEach(tabContent => {
+//             tabContent.classList.remove('qualification__active')
+//         })
+//         target.classList.add('qualification__active')
+
+//         tabs.forEach(tab => {
+//             tab.classList.remove('qualification__active')
+//         })
+//         tab.classList.add('qualification__active')
+
+//     })
+// })
+
+
 /*==================== SERVICES MODAL ====================*/
 const modalViews = document.querySelectorAll('.services__modal'),
     modalBtns = document.querySelectorAll('.services__button'),
@@ -93,20 +116,6 @@ modalCloses.forEach(modalClose => {
             modalView.classList.remove('active-modal');
         });
     });
-});
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new Swiper(".portfolio__container", {
-    cssMode: true,
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
 });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -176,3 +185,45 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+
+// Amazing job! I made a small improvement to the percentage bars using js instead of hardcoding the widths into the CSS file:
+
+// ```
+// const skills = {
+//   frontendSkill: {
+//     html: 90,
+//     css: 80,
+//     javascript: 60,
+//     react: 70,
+//   },
+//   backendSkills: {
+//     php: 60,
+//     node: 50,
+//     mysql: 60,
+//     python: 40,
+//   },
+//   designSkills: {
+//     figma: 60,
+//     sketch: 50,
+//     photoshop: 80,
+//     illustrator: 40,
+//   },
+// };
+
+// for (const key in skills) {
+//   if (Object.hasOwnProperty.call(skills, key)) {
+//     const element = skills[key];
+
+//     for (const [key, value] of Object.entries(element)) {
+//       const skillContainer = document.getElementsByClassName(`skills-${key}`);
+
+//       if (skillContainer.length) {
+//         skillContainer[0].style.width = `${value}px`;
+//       }
+//     }
+//   }
+// }
+// ```
+

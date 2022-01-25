@@ -37,6 +37,11 @@
                             </a>
                         </li>
                         <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
                             <a href="#skills" class="nav__link">
                                 <i class="uil uil-file-alt nav__icon"></i> Skills
                             </a>
@@ -44,11 +49,6 @@
                         <li class="nav__item">
                             <a href="#services" class="nav__link">
                                 <i class="uil uil-briefcase-alt nav__icon"></i> Services
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Projects
                             </a>
                         </li>
                         <li class="nav__item">
@@ -138,12 +138,12 @@
                     <div class="about__data">
                         <p class="about__description">
                             Ronny Coste is a Software Engineer, Photographer, and Designer based out of New York City.
-                            The work I captured is a mixture of serenity and tranquility combined with everyday life.
+                            The work I capture is a mixture of serenity and tranquility combined with everyday life.
                         </p>
                         <div class="about__info">
                             <div>
                                 <span class="about__info-title">4th</span>
-                                <span class="about__info-name"> <br>B.Science</span>
+                                <span class="about__info-name"> <br>Bachelor of Science</span>
                             </div>
                             <div>
                                 <span class="about__info-title">6</span>
@@ -161,6 +161,174 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio" >
+                   <h2 class="section__title" data-title="My works">Portfolio</h2>
+                    <span class="section__subtitle">Most Recent Work</span>
+                    
+                    <div class="portfolio__container container grid">
+                        
+                <!--===================  PORTFOLIO MENU =================== -->
+                    
+                        <div class="qualification__tabs">
+                            <div class="qualification__button button--flex portfolio__active" data-target='#development'>
+                                <i class="uil uil-brackets-curly qualification__icon"></i>
+                                Development
+                            </div>
+    
+                            <div class="qualification__button button--flex" data-target="#photography">
+                                <i class="uil uil-camera qualification__icon"></i>
+                                Photography
+                            </div> 
+                            <div class="qualification__button button--flex" data-target="#filmMaking">
+                                <i class="uil uil-video qualification__icon"></i>
+                                FilmMaking
+                            </div>   
+                        </div>
+                    
+                        <!--==================== PORTFOLIO CONTENT 1 ====================-->
+                        <div class="portfolio__content portfolio__active" data-content id="development">
+                       
+                     <!--======================== PORTFOLIO 1 =============-->
+                        <div class="portfolio__content gallery-image grid-item development">
+                            <img src="assets/img/Personal.jpg" alt="ronnycoste.com"/>
+    
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">ronnycoste.com</h3>
+                                <a href="#" class="button button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                     <!--======================== PORTFOLIO 2 =============-->
+                        <div class="portfolio__content grid-item gallery-image development">
+                            <img src="assets/img/lifecycle.jpg" alt=""/>
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">LifeCycle</h3>
+                                <!-- <p class="portfolio__description">
+                                    LifeCycle was created to make recylcing easy for the users by finding nearby recycling places.
+                                    <br> Built with React.js, Node.js, Earth911 API, Google maps API, Amazon Cognito API, NYCOpen Data JSON.
+                                </p> -->
+                                <a href="https://lifecycle380.herokuapp.com/" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--======================== PORTFOLIO 3 =============-->
+                        <div class="portfolio__content gallery-image grid-item development">
+                            <img src="assets/img/revive.jpg" alt="revive"/>
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">reVive</h3>
+                                <!-- <p class="portfolio__description">
+                                    Mobile aplication that uses the phones camera to scan items and list places to dispose of these items.
+                                    <br> Built with React Native, Earth911 API, Google Vision API, and Google Could Services.
+                                </p> -->
+                                <a href="https://devpost.com/software/cuny-hackathon-2019#updates" class="button button--flex button--small portfolio__button">
+                                   Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+
+                         <!--==================== PORTFOLIO CONTENT 2 ====================-->
+                         <div class="portfolio__content" data-content id="photography">
+                         
+                       <!--======================== PORTFOLIO 1 =============-->
+                            <div class="grid-item photography">
+                                <div class="gallery-image">
+                                  <img src="assets/img/78050004.jpg" alt="SoHo on canvas"/>
+                                  <div class="portfolio__data img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                      <h3 class="portfolio__title">SoHo on canvas</h3>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                        <!--======================== PORTFOLIO 2 =============-->
+                        <div class="grid-item photography">
+                            <div class="gallery-image">
+                              <img src="assets/img/000678220002.jpg" alt="Into to the woods"/>
+                              <div class="portfolio__data img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                  <h3 class="portfolio__title">Into to the woods</h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        <!--======================== PORTFOLIO 3 =============-->
+                        <div class="grid-item photography">
+                            <div class="gallery-image">
+                              <img src="assets/img/13710005.jpg" alt="" />
+                              <div class="portfolio__data img-overlay">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                  <h3 class="portfolio__title">Blossom series</h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                         </div>
+
+                        
+                         <!--==================== PORTFOLIO CONTENT 3 ====================-->
+                         <div class="porfolio__content" data-content id="filmMaking">
+                        
+                        <!--======================== PORTFOLIO 1 =============-->
+
+                        <div class="portfolio__content grid-item filmMaking">
+                            <div class="portfolio__video">
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/X52cKIhJTdI" 
+                                title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                              allowfullscreen></iframe>
+                              <div class="portfolio__data">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3 class="portfolio__title"> Camera assistant (AC) </h3>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        <!--======================== PORTFOLIO 2 =============-->
+
+                          <div class="portfolio__content grid-item filmMaking">
+                            <div class="portfolio__video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/sA_Uk9Tpp8c" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>                              
+                                <div class="img-overlay">
+                                <div class="portfolio__data">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3 class="portfolio__title"> Camera assistant (AC)</h3>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+
+                          <!--======================== PORTFOLIO 3 =============-->
+
+                        </div>
+                                        
+                    <!--============ Add Pagination =============-->
+                    <div class="swiper-pagination"></div>
+                    </div>
             </section>
 
             <!--==================== SKILLS ====================-->
@@ -302,7 +470,7 @@
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Windwos Server</h3>
+                                        <h3 class="skills__name">Windows Server</h3>
                                         <span class="skills__number">85%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -335,7 +503,7 @@
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
-                <h2 class="section__title">Qualifications</h2>
+                <h2 class="section__title" data-title="My Qualifications">Qualifications</h2>
                 <span class="section__subtitle">Personal journey</span>
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
@@ -362,10 +530,7 @@
                                         <i class="uil uil-calendar-alt"></i>
                                         2019 - 2021
                                     </div>
-                                    <div class="qualification__calendar">
-                                        3.3 GPA
                                     </div>
-                                </div>
                         
                                 <div>
                                     <span class="qualification__rounder"></span>
@@ -419,9 +584,7 @@
                                 </div>
                             </div>
 
-                        
-                            </div>
-                        </div>
+                        </div> <!-- class="qualification__content qualification__active" -->
 
                         <!--==================== QUALIFICATION CONTENT 2 ====================-->
                         <div class="qualification__content" data-content id="work">
@@ -508,7 +671,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> <!-- class="qualification__container container" -->
             </section>
 
             <!--==================== SERVICES ====================-->
@@ -643,7 +806,7 @@
                  <div class="services__content">
                     <div>
                         <i class="uil uil-film services__icon"></i>
-                        <h3 class="services__title">Photographer</h3>
+                        <h3 class="services__title">Digital & Film<br>Photographer</h3>
 
                         <span class="button button--flex button--small button--link services__button">
                             View More
@@ -687,7 +850,7 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-clapper-board services__icon"></i>
-                        <h3 class="services__title">FilmMaker</h3>
+                        <h3 class="services__title">Videographer &<br>FilmMaker</h3>
 
                         <span class="button button--flex button--small button--link services__button">
                             View More
@@ -772,77 +935,7 @@
                 </div>
             </section>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Most Recent Work</span>
-    
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--======================== PORTFOLIO 1 =============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/lifecycle.jpg" alt="" class="portfolio__img">
-    
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">LifeCycle</h3>
-                                <p class="portfolio__description">
-                                    LifeCycle was created to make recylcing easy for the users by finding nearby recycling places.
-                                    <br> Built with React.js, Node.js, Earth911 API, Google maps API, Amazon Cognito API, NYCOpen Data JSON.
-                                </p>
-                                <a href="https://lifecycle380.herokuapp.com/" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-    
-                        <!--======================== PORTFOLIO 2 =============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/Personal.jpg" alt="ronnycoste.com" class="portfolio__img">
-    
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">ronnycoste.com</h3>
-                                <p class="portfolio__description">
-                                    Personal website that is adaptable to all modern devices.
-                                    <br> Built with Javascript, HTML, And CSS.
-                                </p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                         <!--======================== PORTFOLIO 3 =============-->
-                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/revive.jpg" alt="revive" class="portfolio__img">
-    
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Revive</h3>
-                                <p class="portfolio__description">
-                                    Mobile aplication that uses the phones camera to scan items and list places to dispose of these items.
-                                    <br> Built with React Native, Earth911 API, Google Vision API, and Google Could Services.
-                                </p>
-                                <a href="https://devpost.com/software/cuny-hackathon-2019#updates" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-    
-                     
-                    <!--============ Add Arrows =============-->
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-    
-                    <!--============ Add Pagination =============-->
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
+            
 
         <!--==================== PROJECT IN MIND ====================-->
         <section class="project section">
@@ -982,7 +1075,7 @@
 
     <!--==================== SWIPER JS ====================-->
     <script src="swiper-bundle.min.js"></script>
-
+    
     <!--==================== MAIN JS ====================-->
     <script src="main.js"></script>
 </body>
