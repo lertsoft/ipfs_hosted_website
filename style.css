@@ -355,7 +355,7 @@ img{
 .button--port{
     display: inline-flex;
     position:absolute;
-    right: 30%;
+    right: 20%;
     margin-top: 0.5rem;
     /* margin-right: 0.5rem; */
     margin-bottom: 0.5rem;
@@ -992,6 +992,9 @@ img{
         width: 320px;
         
     }
+    .button--port{
+        right: 20%;
+    }
 }
 /* For medium devices */
 @media screen and (min-width: 568px){
@@ -1174,6 +1177,9 @@ img{
     .gallery-image{
         width: 700px;
         
+    }
+    .button--port{
+        right: 25%;
     }
 }
 
