@@ -358,6 +358,7 @@ img{
     text-align: justify right;
     justify-self: right;
     align-self: justify right;
+    /* align-items: left; */
 
 }
 
