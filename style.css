@@ -354,11 +354,11 @@ img{
 
 .button--port{
     display: inline-flex;
-    border-radius: .5rem;
-    text-align: justify right;
-    justify-self: right;
-    align-self: justify right;
-    /* align-items: left; */
+    position:absolute;
+    right: 30%;
+    margin-top: 0.5rem;
+    /* margin-right: 0.5rem; */
+    margin-bottom: 0.5rem;
 
 }
 
@@ -730,6 +730,8 @@ img{
     text-align: center;
     justify-self: center;
     align-self: center;
+    margin-top: 1.3rem;
+    margin-bottom: 1.6rem;
 }
 
 .swiper-button-prev::after,
