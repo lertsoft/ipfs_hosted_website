@@ -5,12 +5,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Ronny Coste personal portfolio site with his most recent projects. " content="Projects and Photos portfolio">
+        <meta name="Ronny Coste personal portfolio site with his most recent projects. " content="Software Development, films, and Photography works">
         <meta itemprop="image" content="assets/img/rcblackandwhite.png" >
 
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="font-awesome.min.css">
         
         <!--==================== SWIPER CSS ====================-->
         <link rel="stylesheet" href="swiper-bundle.min.css">
@@ -82,17 +82,17 @@
                         <div class="home__social">
 
                         
-                             <!-- <a href="https://www.es.ronnycoste.com/" target="_blank" class="home__social-icon"> 
+                             <!-- <a href="https://www.es.ronnycoste.com/" target="_blank" rel="noopener noreferrer" class="home__social-icon"> 
                                 <img src="assets/img/spain16px.png" alt="Spanish Language"/>
                             </a> -->
                            
 
-                            <a href="https://www.instagram.com/costeronny/" target="_blank" rel="noopener noreferrer" class="home__social-icon">
+                            <a href="" target="_blank" rel="noopener noreferrer" id="instagram" class="home__social-icon links-instagram">
                                 <i class="uil uil-instagram"></i>
                             </a>
 
 
-                            <a href="https://github.com/lertsoft" target="_blank" rel="noopener noreferrer" class="home__social-icon">
+                            <a href="" target="_blank" rel="noopener noreferrer" id="github" class="home__social-icon">
                                 <i class="uil uil-github-alt"></i>
                             </a>
                         </div>
@@ -146,7 +146,7 @@
                 <h2 class="section__title">About Me</h2>
                 <span class="section__subtitle">Intro</span>
                 <div class="about__conntainer container grid">
-                    <img src="assets/img/rccolor.JPG" alt="Ronny Coste Photo" class="about__img">
+                    <img src="assets/img/rccolor.JPG" alt="Ronny Coste Photo" class="about__img"/>
                     <div class="about__data typeWriter_container">
                         <p class="about__description">
                             Ronny Coste is a <span class="typed-text"></span><span class="cursor">&nbsp;</span> based out of New York City. 
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                         <div class="about__buttons">
-                            <a download="" href="https://docs.google.com/document/d/1hsroxazSC8G1tRMweraSicSZWmVLqG7tHHrRo5z6NG8/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="button button--flex">
+                            <a href="assets/img/Ronny_Coste_Resume.pdf" class="button button--flex">
                                 Download Resume <i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
@@ -210,7 +210,7 @@
     
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">ronnycoste.com</h3>
-                                <a href="https://ronnycoste.com" target="_blank" rel="noopener noreferrer" class="button button--port button--small portfolio__button">
+                                <a href="" target="_blank" rel="noopener noreferrer" id="main" class="button button--port button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -226,7 +226,7 @@
                                     LifeCycle was created to make recylcing easy for the users by finding nearby recycling places.
                                     <br> Built with React.js, Node.js, Earth911 API, Google maps API, Amazon Cognito API, NYCOpen Data JSON.
                                 </p> -->
-                                <a href="https://lifecycle380.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="button button--port button--small portfolio__button">
+                                <a href="" target="_blank" rel="noopener noreferrer" id="lifecycle" class="button button--port button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon "></i>
                                 </a>
@@ -242,7 +242,7 @@
                                     Mobile aplication that uses the phones camera to scan items and list places to dispose of these items.
                                     <br> Built with React Native, Earth911 API, Google Vision API, and Google Could Services.
                                 </p> -->
-                                <a href="https://typescript-nextjs-template.vercel.app" target="_blank" rel="noopener noreferrer" class="button button--port button--small portfolio__button">
+                                <a href="" target="_blank" rel="noopener noreferrer" id="template" class="button button--port button--small portfolio__button">
                                    Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -302,7 +302,7 @@
 
                         <div class="portfolio__content grid-item filmMaking">
                             <div class="portfolio__video">
-                              <iframe class="youtube" src="https://www.youtube.com/embed/X52cKIhJTdI" 
+                              <iframe class="youtube" rel="noopener noreferrer" src="https://www.youtube.com/embed/X52cKIhJTdI" 
                                 title="YouTube video player" frameborder="0" 
                                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                               allowfullscreen></iframe>
@@ -319,7 +319,7 @@
 
                           <div class="portfolio__content grid-item filmMaking">
                             <div class="portfolio__video">
-                                <iframe class="youtube" src="https://www.youtube.com/embed/sA_Uk9Tpp8c" 
+                                <iframe class="youtube" rel="noopener noreferrer" src="https://www.youtube.com/embed/sA_Uk9Tpp8c" 
                                     title="YouTube video player" frameborder="0" 
                                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen></iframe>                              
@@ -337,7 +337,7 @@
                           <!--======================== PORTFOLIO 3 =============-->
                           <div class="portfolio__content grid-item filmMaking">
                             <div class="portfolio__video">
-                                <iframe class="youtube" src="https://www.youtube.com/embed/jzrYKLWRaVU" 
+                                <iframe class="youtube" rel="noopener noreferrer" src="https://www.youtube.com/embed/jzrYKLWRaVU" 
                                     title="YouTube video player" frameborder="0" 
                                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowfullscreen></iframe>                              
@@ -1123,7 +1123,7 @@
                         </a>
                     </div>
 
-                    <img src="assets/img/rcblackandwhite.png" alt="" class="project__img">
+                    <img src="assets/img/rcblackandwhite.png" alt="Ronny Coste in black and white" class="project__img">
                 </div>
             </div>
 
@@ -1163,7 +1163,7 @@
                         </div>
                     </div>
 
-                    <form action="https://formsubmit.co/hello@ronnycoste.com" method="POST" class="contact__form grid">
+                    <form action="https://formsubmit.co/hello@ronnycoste.com" target="_blank" rel="noopener noreferrer" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="name" class="contact__label">Name</label>
@@ -1187,7 +1187,7 @@
                         </div>
                         
                         <div>
-                            <button type="submit" class="button button--flex">Send Message
+                            <button type="submit" target="_blank" rel="noopener noreferrer" class="button button--flex">Send Message
                             <i class="uil uil-message button__icon"></i>
                             </button>
                         </div>
@@ -1203,7 +1203,7 @@
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
-                    <a href="https://ronnycoste.com" target="_blank" rel="noopener noreferrer" >
+                    <a href="" id="main" target="_blank" rel="noopener noreferrer"  >
                     <p class="footer__title"> Ronny Coste</p>
                     </a>
                     <span class="footer__subtitle">Software Developer</span>
@@ -1211,32 +1211,32 @@
 
                 <ul class="footer__links">
                     <li>
-                        <a href="https://ronnycoste.com" target="_blank" rel="noopener noreferrer" class="footer__link">Main</a>
+                        <a href="" target="_blank" rel="noopener noreferrer" id="main" class="footer__link">Main</a>
                     </li>
 
                     <li>
-                        <a href="https://blog.ronnycoste.com" target="_blank" rel="noopener noreferrer" class="footer__link">Blog</a>
+                        <a href="" target="_blank" rel="noopener noreferrer" id="blog" class="footer__link">Blog</a>
                     </li>
 
                     <li>
-                        <a href="https://gallery.ronnycoste.com" target="_blank" rel="noopener noreferrer" class="footer__link">Gallery</a>
+                        <a href="" target="_blank" rel="noopener noreferrer" id="gallery" class="footer__link">Gallery</a>
                     </li>
                 </ul>
 
                 <div class="footer__socials">
-                    <a href="https://www.twitter.com/costeronny" target="_blank" rel="noopener noreferrer" class="footer__social"  class="footer__social">
+                    <a href="" target="_blank" rel="noopener noreferrer" id="twitter" class="footer__social"  class="footer__social">
                         <i class="uil uil-twitter"></i>
                     </a>
 
-                    <a href="https://www.instagram.com/costeronny" target="_blank" rel="noopener noreferrer" class="footer__social" class="footer__social">
+                    <a href="" target="_blank" rel="noopener noreferrer" id="instagram" class="footer__social" class="footer__social">
                         <i class="uil uil-instagram"></i>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/ronnycoste" target="_blank" rel="noopener noreferrer" class="footer__social" class="footer__social">
+                    <a href="" target="_blank" rel="noopener noreferrer" id="linkedin" class="footer__social" class="footer__social">
                         <i class="uil uil-linkedin-alt"></i>
                     </a>
 
-                    <a href="https://github.com/lertsoft" target="_blank" rel="noopener noreferrer" class="footer__social" class="footer__social">
+                    <a href="" target="_blank" rel="noopener noreferrer" id="github" class="footer__social" class="footer__social">
                         <i class="uil uil-github-alt"></i>
                     </a>
                 </div>

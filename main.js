@@ -283,3 +283,31 @@ for (const key in skills) {
   }
 }
 
+/*==================== workaround Links for IPFS ====================*/
+
+document.getElementById("instagram").onclick = function () {
+    location.href = "https://instagram.com/costeronny";};
+
+document.getElementById("twitter").onclick = function () {
+    location.href = "https://twitter.com/costeronny";};
+
+document.getElementById("linkedin").onclick = function () {
+    location.href = "https://www.linkedin.com/in/ronnycoste";};
+
+document.getElementById("github").onclick = function () {
+    location.href = "https://github.com/lertsoft";};
+
+document.getElementById("main").onclick = function () {
+    location.href = "https://ronnycoste.com";};
+
+document.getElementById("blog").onclick = function () {
+    location.href = "https://blog.ronnycoste.com";};
+        
+document.getElementById("gallery").onclick = function () {
+    location.href = "https://gallery.ronnycoste.com";};
+
+document.getElementById("template").onclick = function () {
+    location.href = "https://typescript-nextjs-template.vercel.app";};
+    
+document.getElementById("lifecycle").onclick = function () {
+    location.href = "https://lifecycle380.herokuapp.com/";};
