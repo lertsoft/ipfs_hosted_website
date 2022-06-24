@@ -297,7 +297,7 @@ document.getElementById("linkedin").onclick = function () {
 document.getElementById("github").onclick = function () {
     location.href = "https://github.com/lertsoft";};
 
-document.getElementById("main").onclick = function () {
+document.getElementById("mainsite").onclick = function () {
     location.href = "https://ronnycoste.com";};
 
 document.getElementById("blog").onclick = function () {
