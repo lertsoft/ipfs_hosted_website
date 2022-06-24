@@ -1,5 +1,6 @@
 # ronnycoste.com
 portfolio website.
+This website is now hosted on IPFS!
 
 # `About the website`
 

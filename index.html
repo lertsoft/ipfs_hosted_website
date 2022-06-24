@@ -82,17 +82,17 @@
                         <div class="home__social">
 
                         
-                             <a href="https://www.es.ronnycoste.com/" target="_blank" class="home__social-icon"> 
+                             <!-- <a href="https://www.es.ronnycoste.com/" target="_blank" class="home__social-icon"> 
                                 <img src="assets/img/spain16px.png" alt="Spanish Language"/>
-                            </a>
+                            </a> -->
                            
 
-                            <a href="https://www.instagram.com/costeronny/" target="_blank" class="home__social-icon">
+                            <a href="https://www.instagram.com/costeronny/" target="_blank" rel="noopener noreferrer"class="home__social-icon">
                                 <i class="uil uil-instagram"></i>
                             </a>
 
 
-                            <a href="https://github.com/lertsoft" target="_blank" class="home__social-icon">
+                            <a href="https://github.com/lertsoft" target="_blank" rel="noopener noreferrer" class="home__social-icon">
                                 <i class="uil uil-github-alt"></i>
                             </a>
                         </div>
@@ -147,9 +147,9 @@
                 <span class="section__subtitle">Intro</span>
                 <div class="about__conntainer container grid">
                     <img src="assets/img/rccolor.JPG" alt="Ronny Coste Photo" class="about__img">
-                    <div class="about__data">
+                    <div class="about__data typeWriter_container">
                         <p class="about__description">
-                            Ronny Coste is a Software Engineer, Photographer, and Designer based out of New York City.
+                            Ronny Coste is a <span class="typed-text"></span><span class="cursor">&nbsp;</span> based out of New York City. 
                             The work he captures is a mixture of serenity and tranquility combined with everyday life.
                         </p>
                         <div class="about__info">
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                         <div class="about__buttons">
-                            <a download="" href="assets/pdf/RonnyCoste_resume.pdf" class="button button--flex">
+                            <a download="" href="https://docs.google.com/document/d/1hsroxazSC8G1tRMweraSicSZWmVLqG7tHHrRo5z6NG8/edit?usp=sharing" class="button button--flex">
                                 Download Resume <i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
@@ -206,11 +206,11 @@
                        
                      <!--======================== PORTFOLIO 1 =============-->
                         <div class="gallery-image grid-item development">
-                            <img src="assets/img/Personal.jpg" alt="ronnycoste.com"/>
+                            <img src="assets/img/personal.png" alt="https://ronnycoste.com"/>
     
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">ronnycoste.com</h3>
-                                <a href="#" class="button button--port button--small portfolio__button">
+                                <a href="https://ronnycoste.com" target="_blank" rel="noopener noreferrer" class="button button--port button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -226,7 +226,7 @@
                                     LifeCycle was created to make recylcing easy for the users by finding nearby recycling places.
                                     <br> Built with React.js, Node.js, Earth911 API, Google maps API, Amazon Cognito API, NYCOpen Data JSON.
                                 </p> -->
-                                <a href="https://lifecycle380.herokuapp.com/" class="button button--port button--small portfolio__button">
+                                <a href="https://lifecycle380.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="button button--port button--small portfolio__button">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon "></i>
                                 </a>
@@ -234,15 +234,15 @@
                         </div>
                         <!--======================== PORTFOLIO 3 =============-->
                         <div class="grid-item gallery-image development">
-                            <img src="assets/img/revive.jpg" alt="revive"/>
+                            <img src="assets/img/template.png" alt="revive"/>
 
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">reVive</h3>
+                                <h3 class="portfolio__title">Template with tooling </h3>
                                 <!-- <p class="portfolio__description">
                                     Mobile aplication that uses the phones camera to scan items and list places to dispose of these items.
                                     <br> Built with React Native, Earth911 API, Google Vision API, and Google Could Services.
                                 </p> -->
-                                <a href="https://devpost.com/software/cuny-hackathon-2019#updates" class="button button--port button--small portfolio__button">
+                                <a href="https://typescript-nextjs-template.vercel.app" target="_blank" rel="noopener noreferrer" class="button button--port button--small portfolio__button">
                                    Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -335,7 +335,22 @@
                           </div>
 
                           <!--======================== PORTFOLIO 3 =============-->
-
+                          <div class="portfolio__content grid-item filmMaking">
+                            <div class="portfolio__video">
+                                <iframe class="youtube" src="https://www.youtube.com/embed/jzrYKLWRaVU" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>                              
+                                <div class="img-overlay">
+                                <div class="portfolio__data">
+                                <div class="plus"></div>
+                                <div class="img-description">
+                                    <h3 class="portfolio__title"> Camera assistant (AC)</h3>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
                         </div>
                                         
                     <!--============ Add Pagination =============-->
@@ -365,30 +380,60 @@
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Javascript | Node.js </h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills-javascript"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML </h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills-html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS </h3>
                                         <span class="skills__number">80%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__JS"></span>
+                                        <span class="skills__percentage skills-css"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">TypeScript </h3>
-                                        <span class="skills__number">75%</span>
+                                        <span class="skills__number">70%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__database"></span>
+                                        <span class="skills__percentage skills-typescript"></span>
                                     </div>
                                 </div>
                                     
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name"> React.js | Next.js | React-Native </h3>
+                                        <h3 class="skills__name"> React.js | Next.js </h3>
                                         <span class="skills__number">80%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__JS"></span>
+                                        <span class="skills__percentage skills-react"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">React-Native</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills-reactnative"></span>
                                     </div>
                                 </div>
 
@@ -398,7 +443,7 @@
                                         <span class="skills__number">70%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__python"></span>
+                                        <span class="skills__percentage skills-python"></span>
                                     </div>
                                 </div>
 
@@ -408,17 +453,27 @@
                                         <span class="skills__number">65%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__react"></span>
+                                        <span class="skills__percentage skills-r"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Solidity | Ethers </h3>
+                                        <h3 class="skills__name">Solidity </h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills-solidity"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">MongoDB </h3>
                                         <span class="skills__number">70%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__python"></span>
+                                        <span class="skills__percentage skills-mongoDB"></span>
                                     </div>
                                 </div>
 
@@ -428,7 +483,7 @@
                                         <span class="skills__number">75%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__database"></span>
+                                        <span class="skills__percentage skills-sql"></span>
                                     </div>
                                 </div>
                             </div>
@@ -454,57 +509,57 @@
                                         <span class="skills__number">80%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__photoshop"></span>
+                                        <span class="skills__percentage skills-bootstrap"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Project Management</h3>
-                                        <span class="skills__number">85%</span>
+                                        <span class="skills__number">75%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__procreate"></span>
+                                        <span class="skills__percentage skills-projectMang"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Photoshop | Pixelmator</h3>
-                                        <span class="skills__number">80%</span>
+                                        <span class="skills__number">70%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__photoshop"></span>
+                                        <span class="skills__percentage skills-photoshop"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Figma</h3>
-                                        <span class="skills__number">70%</span>
+                                        <span class="skills__number">80%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__figma"></span>
+                                        <span class="skills__percentage skills-figma"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name"> Adobe InDesign </h3>
-                                        <span class="skills__number">65%</span>
+                                        <span class="skills__number">60%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__cnn"></span>
+                                        <span class="skills__percentage skills-indesign"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Procreate</h3>
-                                        <span class="skills__number">85%</span>
+                                        <span class="skills__number">65%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__procreate"></span>
+                                        <span class="skills__percentage skills-procreate"></span>
                                     </div>
                                 </div>
                             </div>
@@ -528,31 +583,31 @@
                             <div class="skills__list grid">
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name"> GCloud | AWS </h3>
+                                        <h3 class="skills__name"> GCloud | AWS | Firebase </h3>
                                         <span class="skills__number">75%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__pec"></span>
+                                        <span class="skills__percentage skills-aws"></span>
                                     </div>
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">Windows Server</h3>
-                                        <span class="skills__number">85%</span>
+                                        <span class="skills__number">80%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__wserver"></span>
+                                        <span class="skills__percentage skills-wserver"></span>
                                     </div>
                                 </div>
                                                         
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name">IPFS</h3>
-                                        <span class="skills__number">70%</span>
+                                        <span class="skills__number">90%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__wire"></span>
+                                        <span class="skills__percentage skills-ipfs"></span>
                                     </div>
                                     </div>
 
@@ -562,7 +617,7 @@
                                                 <span class="skills__number">80%</span>
                                                 </div>
                                         <div class="skills__bar">
-                                                <span class="skills__percentage skills__unix"></span>
+                                                <span class="skills__percentage skills-vmware"></span>
                                             </div>
                                             </div>
 
@@ -572,17 +627,17 @@
                                             <span class="skills__number">70%</span>
                                         </div>
                                         <div class="skills__bar">
-                                            <span class="skills__percentage skills__wire"></span>
+                                            <span class="skills__percentage skills-ospf"></span>
                                         </div>
                                         </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name"> Linux | Unix </h3>
-                                            <span class="skills__number">80%</span>
+                                            <span class="skills__number">70%</span>
                                             </div>
                                     <div class="skills__bar">
-                                            <span class="skills__percentage skills__unix"></span>
+                                            <span class="skills__percentage skills-linux"></span>
                                         </div>
                                         </div>
 
@@ -592,7 +647,7 @@
                                         <span class="skills__number">70%</span>
                                     </div>
                                     <div class="skills__bar">
-                                        <span class="skills__percentage skills__wire"></span>
+                                        <span class="skills__percentage skills-wireshark"></span>
                                     </div>
                                 </div>
                             </div>
@@ -684,6 +739,28 @@
 
                         <!--==================== QUALIFICATION CONTENT 2 ====================-->
                         <div class="qualification__content" data-content id="work">
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Belle Image Productions </h3>
+                                    <span class="qualification__subtitle"> Director of Photography & Camera assistant contractor</span>
+
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 - Present
+                                    </div>
+                                </div>
+                        
+                               
+                            </div>
+                            
                             <!--==================== QUALIFICATION 1 ====================-->
                             <div class="qualification__data">
                                 <div>
@@ -1126,21 +1203,23 @@
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
+                    <a href="https://ronnycoste.com" target="_blank" rel="noopener noreferrer" >
                     <p class="footer__title"> Ronny Coste</p>
+                    </a>
                     <span class="footer__subtitle">Software Developer</span>
                 </div>
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#services" class="footer__link">Services</a>
+                        <a href="https://ronnycoste.com" target="_blank" rel="noopener noreferrer" class="footer__link">Main</a>
                     </li>
 
                     <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                        <a href="https://blog.ronnycoste.com" target="_blank" rel="noopener noreferrer" class="footer__link">Blog</a>
                     </li>
 
                     <li>
-                        <a href="#contact" class="footer__link">Contact Me</a>
+                        <a href="https://gallery.ronnycoste.com" target="_blank" rel="noopener noreferrer" class="footer__link">Gallery</a>
                     </li>
                 </ul>
 

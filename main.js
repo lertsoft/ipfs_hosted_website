@@ -186,44 +186,100 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+/*==================== Type Writer function ====================*/
+
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+// Array or list of words to write with the effect.
+const textArray = ["Software Engineer", "Photographer", "Filmmaker", "Designer", "Thinker", "Problem solver"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
 
 
-// Amazing job! I made a small improvement to the percentage bars using js instead of hardcoding the widths into the CSS file:
+/*==================== Skills contants for the bar ====================*/
 
-// ```
-// const skills = {
-//   frontendSkill: {
-//     html: 90,
-//     css: 80,
-//     javascript: 60,
-//     react: 70,
-//   },
-//   backendSkills: {
-//     php: 60,
-//     node: 50,
-//     mysql: 60,
-//     python: 40,
-//   },
-//   designSkills: {
-//     figma: 60,
-//     sketch: 50,
-//     photoshop: 80,
-//     illustrator: 40,
-//   },
-// };
+const skills = {
+  softwareSkill: {
+    html: 90,
+    css: 80,
+    javascript: 75,
+    typescript: 70,
+    reactnative: 70,
+    react: 80,
+    python: 70,
+    r: 65,
+    solidity: 60,
+    mongoDB: 70,
+    sql: 75,
 
-// for (const key in skills) {
-//   if (Object.hasOwnProperty.call(skills, key)) {
-//     const element = skills[key];
+  },
+  technologiesSkills: {
+    aws: 75,
+    wserver: 80,
+    ipfs: 90,
+    vmware: 80,
+    ospf: 70,
+    linux: 70,
+    wireshark: 70,
+  },
+  designSkills: {
+    figma: 80,
+    bootstrap: 80,
+    projectMang: 75,
+    procreate: 65,
+    photoshop: 70,
+    indesign: 60,
+    illustrator: 40,
+  },
+};
 
-//     for (const [key, value] of Object.entries(element)) {
-//       const skillContainer = document.getElementsByClassName(`skills-${key}`);
+for (const key in skills) {
+  if (Object.hasOwnProperty.call(skills, key)) {
+    const element = skills[key];
 
-//       if (skillContainer.length) {
-//         skillContainer[0].style.width = `${value}px`;
-//       }
-//     }
-//   }
-// }
-// ```
+    for (const [key, value] of Object.entries(element)) {
+      const skillContainer = document.getElementsByClassName(`skills-${key}`);
+
+      if (skillContainer.length) {
+        skillContainer[0].style.width = `${value}%`;
+      }
+    }
+  }
+}
 
