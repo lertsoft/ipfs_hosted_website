@@ -2,7 +2,7 @@
 portfolio website. Built with HTML, CSS, And Vanilla JS only.
 
 This website is now hosted on IPFS! 
-<a href="https://gateway.pinata.cloud/ipfs/QmUGm6hFBedf6uVjugbV5Ev4AThrvTQoHFueDmi43o2Jag/" > link here! </a>
+<a href="https://ipfs.ronnycoste.com" > link here! </a>
 
 
 
