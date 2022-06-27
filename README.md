@@ -22,5 +22,5 @@ I found that extension to make local development more easy and less repetitive.
 
 # * TO DO's *
 1. Fix portfolio tab and the education/experience tab. Now when someone click any of them the other is affected, which it shoould not, and also every time the education/expereince tab is pressed the entire goes goes to the footer, which it should not.
-2.  Add a custom domain.
-3.  Make it more realible
+2.  ~~Add a custom domain.
+3.  ~~Make it more realible
